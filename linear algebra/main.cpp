@@ -142,19 +142,21 @@ class LA_Vector {
 int main(int argc, const char * argv[]) {
     
     
-//    double a[2] = {1, 2};
-//    Vector a1(a);
-//    a1.to_string();
-//
-//    double b[2] = {4, 2};
-//    Vector a2(b);
-//    a2.to_string();
-//
-//    Vector a3 = a1 + a2;
-//    a3.to_string();
-//
-//    Vector a4 = a2 - a1;
-//    a4.to_string();
+    vector<double> a = {1, 2};
+    LA_Vector a1(a);
+    a1.to_string();
+    
+    vector<double> b = {4, 2};
+    LA_Vector b1(b);
+    b1.to_string();
+    
+    LA_Vector c1 = a1 + b1;
+    c1.to_string();
+    
+    LA_Vector d1 = b1 - a1;
+    d1.to_string();
+    
+    
     LA_Vector v = LA_Vector::find_unit_vector_r2(7, 200);
     LA_Vector w = LA_Vector::find_unit_vector_r2(5, 70);
     
